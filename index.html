@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List <span>📝</span></h1>
+        <h2>Your Tasks Await!</h2>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add your task" />
+            <button id="addTaskButton"><img src="add.png" alt="Add Task"></button>
+        </div>
+        <div class="filter-search-container">
+            <div class="filter-container">
+                <select id="filterSelect">
+                    <option value="all">All</option>
+                    <option value="complete">Complete</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+            </div>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search tasks..." />
+            </div>
+        </div>
+        <div id="taskList"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

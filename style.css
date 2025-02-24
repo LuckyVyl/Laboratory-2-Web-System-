@@ -1,0 +1,131 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(background1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-image: url(background2.jpg);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    margin: 0 0 20px 0;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+    border-color: rgb(176, 112, 165);
+    outline: none;
+}
+
+#addTaskButton {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(176, 112, 165);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#addTaskButton:hover {
+    background-color: #89114f;
+    transform: scale(1.05);
+}
+
+.filter-search-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.filter-container, .search-container {
+    flex: 1;
+    margin: 0 5px;
+}
+
+#filterSelect, #searchInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e1c1c1;
+    border-radius: 9px;
+    transition: border-color 0.3s;
+}
+
+#filterSelect:focus, #searchInput:focus {
+    border-color: rgb(176, 112, 165);
+    outline: none;
+}
+
+#taskList {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}
+
+.task:hover {
+    background-color: #e9ecef;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #a14444;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+button img {
+    width: 24px;
+    height: 24px;
+}
+
+button:hover img {
+    opacity: 0.9;
+}
